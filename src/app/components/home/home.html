@@ -1,0 +1,30 @@
+<div class="app-shell">
+  <header class="header">
+    <h1 class="title">Tienda simple</h1>
+    <small class="subtitle">Agrega productos y abre el carrito</small>
+  </header>
+
+  <main>
+    <section class="panel">
+      <app-agregar (add)="onAdd($event)"></app-agregar>
+    </section>
+  </main>
+
+  <button class="cart-button" (click)="toggleCart()" title="Carrito">
+    🛒
+    <span class="badge" *ngIf="products.length > 0">{{ products.length }}</span>
+  </button>
+
+  <div *ngIf="showCart" class="cart-panel">
+    <div class="cart-header">
+      <strong>Carrito</strong>
+      <button class="close-btn" (click)="toggleCart()">✕</button>
+    </div>
+    <app-cart [products]="products"></app-cart>
+  </div>
+
+  <div *ngIf="showToast" class="toast" role="status">
+    <span class="toast-text">{{ toastMessage }}</span>
+    <button class="toast-close" (click)="closeToast()">✕</button>
+  </div>
+</div>

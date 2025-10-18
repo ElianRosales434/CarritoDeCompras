@@ -1,0 +1,42 @@
+.cart-container {
+  min-width: 220px;
+}
+
+.empty {
+  color: #666;
+  padding: 0.5rem 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.item {
+  padding: 0.45rem 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.index {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.name {
+  font-size: 14px;
+  color: #222;
+}
