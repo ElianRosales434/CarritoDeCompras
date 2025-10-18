@@ -1,4 +1,4 @@
-# Carrito# Carrito de Compras
+## Carrito de Compras
 
 Proyecto Angular simple para agregar productos y verlos en un carrito.
 
